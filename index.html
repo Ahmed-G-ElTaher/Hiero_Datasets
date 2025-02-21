@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LASC Pipline Datasets</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>"LASC" Pipline Datasets</h1>
+                <div class="nav-links">
+                    <a href="#datasets">Datasets</a>
+                    <a href="#citations">Citations</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <div class="social-links">
+                        <a href="https://github.com/Ahmed-G-ElTaher" target="_blank" class="social-link">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ahmed-el-taher/" target="_blank" class="social-link">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1Wfvgp0QwFy1EV7Y-N3TX94xHUx6F3Abv?usp=drive_link" target="_blank"                                 class="social-link">
+                            <i data-lucide="hard-drive-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Open Research Data Repository</h2>
+                <p>Access and explore our datasets for academic research</p>
+            </div>
+        </section>
+        <section id="datasets" class="datasets">
+            <div class="container">
+                <h2>Available Datasets</h2>
+                <div id="datasetGrid" class="dataset-grid">
+                    <!-- Datasets will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="citations" class="citations">
+            <div class="container">
+                <div id="citationsSection">
+                    <!-- Citations will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About This Repository</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Our dataset that we publish in our <a href=''>paper</a> contain Hieroglyphic Computer Vision dataset like Hieroglyphic Layout Analysis and Lines Segmentation and Signs Classification. this is the first dataset that interested in Hiroglyphic Layout Analysis. Also we make all our datasets public to inhance the research in Hieroglyphic.</p>
+                        <br/>
+                        <h3>Repository Features</h3>
+                        <ul>
+                            <li>Curated research datasets from various disciplines</li>
+                            <li>Standardized metadata and documentation</li>
+                            <li>Version control and citation information</li>
+                            <li>Open access and easy download options</li>
+                        </ul>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="datasetCount">0</span>
+                            <span class="stat-label">Datasets</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="downloadCount">0</span>
+                            <span class="stat-label">Downloads</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="researcherCount">0</span>
+                            <span class="stat-label">Images</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Research Dataset Repository. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

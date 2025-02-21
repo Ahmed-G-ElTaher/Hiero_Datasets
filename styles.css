@@ -1,0 +1,458 @@
+/* Base styles */
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --text-color: #1f2937;
+    --background-color: #f3f4f6;
+    --white: #ffffff;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --code-bg: #1f2937;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header styles */
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    padding: 1rem 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--gray-300);
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--gray-100);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.social-link i {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+/* Hero section */
+.hero {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.search-container button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: var(--gray-100);
+}
+
+/* Datasets section */
+.datasets {
+    padding: 4rem 0;
+    background-color: var(--white);
+}
+
+.filters {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.filters select {
+    padding: 0.5rem;
+    border: 1px solid var(--gray-300);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.dataset-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.dataset-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.dataset-card:hover {
+    transform: translateY(-4px);
+}
+
+.dataset-preview {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.dataset-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.dataset-card:hover .dataset-preview img {
+    transform: scale(1.05);
+}
+
+.dataset-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.dataset-card .meta {
+    color: var(--gray-400);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.dataset-card .description {
+    margin-bottom: 1rem;
+}
+
+/* Citations section */
+.citations {
+    padding: 4rem 0;
+    background-color: var(--gray-100);
+}
+
+.citations-list {
+    display: grid;
+    gap: 2rem;
+}
+
+.citation-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.citation-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Dataset details */
+.dataset-details {
+    background-color: var(--gray-100);
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.wget-command, .citation-info {
+    margin-bottom: 1rem;
+}
+
+.wget-command label, .citation-info label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.code-block {
+    background-color: var(--code-bg);
+    border-radius: 4px;
+    padding: 0.75rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.code-block code {
+    color: var(--white);
+    font-family: monospace;
+    font-size: 0.9rem;
+    word-break: break-all;
+}
+
+.citation-text {
+    background-color: var(--white);
+    border: 1px solid var(--gray-300);
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.copy-btn {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--white);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.copy-btn:hover {
+    background-color: var(--gray-200);
+}
+
+.citation-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.citation-info a:hover {
+    text-decoration: underline;
+}
+
+.dataset-card .download-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.dataset-card .download-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* About section */
+.about {
+    padding: 4rem 0;
+    background-color: var(--gray-100);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.about-text ul {
+    list-style-position: inside;
+    margin: 1rem 0;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.stat-item {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--gray-400);
+}
+
+/* Contact section */
+.contact {
+    padding: 4rem 0;
+    background-color: var(--white);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--gray-300);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--text-color);
+    color: var(--white);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: 6rem 0 3rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .code-block {
+        padding-right: 4rem;
+    }
+}
