@@ -9,7 +9,7 @@ const datasets = [
         downloads: 2,
         size: "3.0 GB",
         format: "JSON",
-        wget: "wget https://drive.google.com/uc?export=download&id=1VTIm39iV-KfDr4wzQC7Z2mpkj1hJzk7L",
+        wget: "https://drive.google.com/uc?export=download&id=1VTIm39iV-KfDr4wzQC7Z2mpkj1hJzk7L",
         doi: "10.1234/climate.2024.001",
         citation: "Smith, J., et al. (2024). Global Climate Change Indicators Dataset 2000-2023. Nature Climate Data, 5(1), 1-15.",
         preview: "./src/images/1(1).png"
@@ -26,7 +26,7 @@ const datasets = [
         wget: "wget https://data.research-repository.org/health/covid19-metrics-2023.zip",
         doi: "10.1234/health.2023.002",
         citation: "Johnson, M., et al. (2023). COVID-19 Global Health Metrics Database. The Lancet Digital Health, 2(3), 45-60.",
-        preview: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=800&auto=format&fit=crop"
+        preview: "./src/images/SS_Dataset0.png"
     },
     {
         id: 3,
@@ -40,7 +40,7 @@ const datasets = [
         wget: "wget https://data.research-repository.org/social/sm-mental-health-2023.zip",
         doi: "10.1234/social.2023.003",
         citation: "Brown, A., et al. (2023). Social Media and Mental Health Dataset. Journal of Digital Psychology, 8(2), 112-128.",
-        preview: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop"
+        preview: "./src/images/SC_Dataset.png"
     }
 ];
 const paper = [
