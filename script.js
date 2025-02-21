@@ -12,7 +12,7 @@ const datasets = [
         wget: "wget https://drive.google.com/drive/folders/1Wfvgp0QwFy1EV7Y-N3TX94xHUx6F3Abv?usp=sharing",
         doi: "10.1234/climate.2024.001",
         citation: "Smith, J., et al. (2024). Global Climate Change Indicators Dataset 2000-2023. Nature Climate Data, 5(1), 1-15.",
-        preview: "Ahmed-G-ElTaher/Hiero_Datasets/1(1).png"
+        preview: "https://github.com/Ahmed-G-ElTaher/Hiero_Datasets/blob/main/1(1).png"
     },
     {
         id: 2,
