@@ -9,7 +9,7 @@ const datasets = [
         downloads: 2,
         size: "3.0 GB",
         format: "JSON",
-        wget: "https://drive.google.com/uc?export=download&id=1VTIm39iV-KfDr4wzQC7Z2mpkj1hJzk7L",
+        wget: "wget https://drive.google.com/uc?export=download&id=1VTIm39iV-KfDr4wzQC7Z2mpkj1hJzk7L",
         doi: "10.1234/climate.2024.001",
         citation: "Smith, J., et al. (2024). Global Climate Change Indicators Dataset 2000-2023. Nature Climate Data, 5(1), 1-15.",
         preview: "https://github.com/Ahmed-G-ElTaher/Hiero_Datasets/blob/main/1(1).png"
