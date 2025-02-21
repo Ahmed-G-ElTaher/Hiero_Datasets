@@ -12,7 +12,7 @@ const datasets = [
         wget: "wget https://drive.google.com/uc?export=download&id=1VTIm39iV-KfDr4wzQC7Z2mpkj1hJzk7L",
         doi: "10.1234/climate.2024.001",
         citation: "Smith, J., et al. (2024). Global Climate Change Indicators Dataset 2000-2023. Nature Climate Data, 5(1), 1-15.",
-        preview: "https://github.com/Ahmed-G-ElTaher/Hiero_Datasets/blob/main/1(1).png"
+        preview: "./src/images/1(1).png"
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ const datasets = [
         year: "2025",
         description: "Dataset that contain Hieroglyphic Signs and its annotations for segmentation. its classes include the direction of the sign --> 'left_sign','right_sign' and 'dual_sign' ",
         downloads: 2,
-        size: "53 MiB",
+        size: "53 MB",
         format: "JSON",
         wget: "wget https://data.research-repository.org/health/covid19-metrics-2023.zip",
         doi: "10.1234/health.2023.002",
@@ -30,20 +30,20 @@ const datasets = [
     },
     {
         id: 3,
-        title: "Social Media Impact on Mental Health",
-        category: "social",
-        year: "2023",
-        description: "Research data on the correlation between social media usage and mental health indicators.",
+        title: "Signs Classification (SC) Dataset",
+        category: "Classification",
+        year: "2025",
+        description: "Dataset that contain Hieroglyphic Signs and its classes. it contains folders, each folder has one class images.",
         downloads: 2,
-        size: "756 MB",
-        format: "JSON, XLSX",
+        size: "3.2 MB",
+        format: "Folders",
         wget: "wget https://data.research-repository.org/social/sm-mental-health-2023.zip",
         doi: "10.1234/social.2023.003",
         citation: "Brown, A., et al. (2023). Social Media and Mental Health Dataset. Journal of Digital Psychology, 8(2), 112-128.",
         preview: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop"
     }
 ];
-const dataset2 = [
+const paper = [
     {
         id: 1,
         title: "Global Climate Change Indicators 2000-2023",
@@ -53,7 +53,7 @@ const dataset2 = [
         downloads: 1234,
         size: "2.3 GB",
         format: "CSV, JSON",
-        wget: "wget https://data.research-repository.org/climate/gcc-indicators-2024.zip",
+        wget: "wget https://1drv.ms/u/c/9b229ec7421bfcf2/ER2t3Ta45k5IpJfS3djnr_wBbxqKN_j3U3FuP6-9mI3fZQ?e=Mes7mH",
         doi: "10.1234/climate.2024.001",
         citation: "Smith, J., et al. (2024). Global Climate Change Indicators Dataset 2000-2023. Nature Climate Data, 5(1), 1-15.",
         preview: "https://images.unsplash.com/photo-1561481538-059fc89c1ce1?q=80&w=800&auto=format&fit=crop"
@@ -111,7 +111,7 @@ function displayCitations() {
     const citationsList = document.createElement('div');
     citationsList.className = 'citations-list';
     
-    dataset2.forEach(dataset => {
+    paper.forEach(dataset => {
         const citationCard = document.createElement('div');
         citationCard.className = 'citation-card';
         citationCard.innerHTML = `
