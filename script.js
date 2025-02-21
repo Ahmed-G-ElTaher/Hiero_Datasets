@@ -120,7 +120,6 @@ function displayCitations() {
                 <label>DOI: <a href="https://doi.org/${dataset.doi}" target="_blank">${dataset.doi}</a></label>
                 <div class="citation-text">
                     <p>${dataset.citation}</p>
-                    <button onclick="copyToClipboard('${dataset.citation}')" class="copy-btn">Copy Citation</button>
                 </div>
             </div>
         `;
