@@ -2,17 +2,17 @@
 const datasets = [
     {
         id: 1,
-        title: "Global Climate Change Indicators 2000-2023",
-        category: "climate",
-        year: "2024",
-        description: "Comprehensive dataset of global climate indicators including temperature, precipitation, and sea level changes.",
+        title: "Hieroglyphic Layout Analysis (HLA) Dataset",
+        category: "Layout Analysis",
+        year: "2025",
+        description: "Dataset that include artifacts images form musuems. its include 883 images. it have 2 annotations --> 'line' and 'Cartouche'  ",
         downloads: 2,
-        size: "2.3 GB",
-        format: "CSV, JSON",
-        wget: "wget https://data.research-repository.org/climate/gcc-indicators-2024.zip",
+        size: "3.0 GB",
+        format: "JSON",
+        wget: "wget https://drive.google.com/drive/folders/1Wfvgp0QwFy1EV7Y-N3TX94xHUx6F3Abv?usp=sharing",
         doi: "10.1234/climate.2024.001",
         citation: "Smith, J., et al. (2024). Global Climate Change Indicators Dataset 2000-2023. Nature Climate Data, 5(1), 1-15.",
-        preview: "https://images.unsplash.com/photo-1561481538-059fc89c1ce1?q=80&w=800&auto=format&fit=crop"
+        preview: "Ahmed-G-ElTaher/Hiero_Datasets/1(1).png"
     },
     {
         id: 2,
