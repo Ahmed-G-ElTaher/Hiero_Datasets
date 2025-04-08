@@ -34,30 +34,16 @@ const paper = [
     {
         id: 1,
         title: "Egyptian Hieroglyphic Layout Analysis",
-        category: "Hieroglyphics",
-        year: "2025",
-        description: "Comprehensive dataset of global climate indicators including temperature, precipitation, and sea level changes.",
-        downloads: 1234,
-        size: "2.9 GB",
-        format: "JSON",
-        wget: "wget https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/C308X3#",
         doi: "10.7910/DVN/C308X3",
         citation: 'El-Taher, Ahmed, 2025, "Egyptian Hieroglyphic Layout Analysis", https://doi.org/10.7910/DVN/C308X3, Harvard Dataverse, V2',
-        preview: "https://images.unsplash.com/photo-1561481538-059fc89c1ce1?q=80&w=800&auto=format&fit=crop"
+        
     },
     {
         id: 2,
         title: "Egyptian Hieroglyphic Signs Segmentation with Orientation",
-        category: "Hieroglyphics",
-        year: "2025",
-        description: "Comprehensive dataset of global climate indicators including temperature, precipitation, and sea level changes.",
-        downloads: 1234,
-        size: "2.9 GB",
-        format: "JSON",
-        wget: "wget https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/HIFG2P",
         doi: "10.7910/DVN/HIFG2P",
         citation: 'El-Taher, Ahmed, 2025, "Egyptian Hieroglyphic Signs Segmentation with Orientation", https://doi.org/10.7910/DVN/HIFG2P, Harvard Dataverse, V1',
-        preview: "https://images.unsplash.com/photo-1561481538-059fc89c1ce1?q=80&w=800&auto=format&fit=crop"
+        
     }
 ];
 
