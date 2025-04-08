@@ -44,7 +44,7 @@ const paper = [
         doi: "10.7910/DVN/C308X3",
         citation: 'El-Taher, Ahmed, 2025, "Egyptian Hieroglyphic Layout Analysis", https://doi.org/10.7910/DVN/C308X3, Harvard Dataverse, V2',
         preview: "https://images.unsplash.com/photo-1561481538-059fc89c1ce1?q=80&w=800&auto=format&fit=crop"
-    }
+    },
     {
         id: 2,
         title: "Egyptian Hieroglyphic Signs Segmentation with Orientation",
