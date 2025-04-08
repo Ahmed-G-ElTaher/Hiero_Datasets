@@ -9,8 +9,8 @@ const datasets = [
         downloads: 2,
         size: "3.0 GB",
         format: "JSON",
-        wget: "https://drive.google.com/uc?export=download&id=1VTIm39iV-KfDr4wzQC7Z2mpkj1hJzk7L",
-        doi: "10.1234/climate.2024.001",
+        wget: "wget https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/C308X3#",
+        doi: "10.7910/DVN/C308X3",
         citation: "Smith, J., et al. (2024). Global Climate Change Indicators Dataset 2000-2023. Nature Climate Data, 5(1), 1-15.",
         preview: "./src/images/1(1).png"
     },
@@ -23,25 +23,12 @@ const datasets = [
         downloads: 2,
         size: "53 MB",
         format: "JSON",
-        wget: "wget https://data.research-repository.org/health/covid19-metrics-2023.zip",
-        doi: "10.1234/health.2023.002",
+        wget: "wget https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/HIFG2P#",
+        doi: "10.7910/DVN/HIFG2P",
         citation: "Johnson, M., et al. (2023). COVID-19 Global Health Metrics Database. The Lancet Digital Health, 2(3), 45-60.",
         preview: "./src/images/SS_Dataset0.png"
     },
-    {
-        id: 3,
-        title: "Signs Classification (SC) Dataset",
-        category: "Classification",
-        year: "2025",
-        description: "Dataset that contain Hieroglyphic Signs and its classes. it contains folders, each folder has one class images.",
-        downloads: 2,
-        size: "3.2 MB",
-        format: "Folders",
-        wget: "wget https://data.research-repository.org/social/sm-mental-health-2023.zip",
-        doi: "10.1234/social.2023.003",
-        citation: "Brown, A., et al. (2023). Social Media and Mental Health Dataset. Journal of Digital Psychology, 8(2), 112-128.",
-        preview: "./src/images/SC_Dataset.png"
-    }
+    
 ];
 const paper = [
     {
