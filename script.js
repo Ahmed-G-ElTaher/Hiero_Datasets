@@ -33,16 +33,30 @@ const datasets = [
 const paper = [
     {
         id: 1,
-        title: "Global Climate Change Indicators 2000-2023",
-        category: "climate",
-        year: "2024",
+        title: "Egyptian Hieroglyphic Layout Analysis",
+        category: "Hieroglyphics",
+        year: "2025",
         description: "Comprehensive dataset of global climate indicators including temperature, precipitation, and sea level changes.",
         downloads: 1234,
-        size: "2.3 GB",
-        format: "CSV, JSON",
-        wget: "wget https://1drv.ms/u/c/9b229ec7421bfcf2/ER2t3Ta45k5IpJfS3djnr_wBbxqKN_j3U3FuP6-9mI3fZQ?e=Mes7mH",
-        doi: "10.1234/climate.2024.001",
-        citation: "Smith, J., et al. (2024). Global Climate Change Indicators Dataset 2000-2023. Nature Climate Data, 5(1), 1-15.",
+        size: "2.9 GB",
+        format: "JSON",
+        wget: "wget https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/C308X3#",
+        doi: "10.7910/DVN/C308X3",
+        citation: 'El-Taher, Ahmed, 2025, "Egyptian Hieroglyphic Layout Analysis", https://doi.org/10.7910/DVN/C308X3, Harvard Dataverse, V2',
+        preview: "https://images.unsplash.com/photo-1561481538-059fc89c1ce1?q=80&w=800&auto=format&fit=crop"
+    }
+    {
+        id: 2,
+        title: "Egyptian Hieroglyphic Signs Segmentation with Orientation",
+        category: "Hieroglyphics",
+        year: "2025",
+        description: "Comprehensive dataset of global climate indicators including temperature, precipitation, and sea level changes.",
+        downloads: 1234,
+        size: "2.9 GB",
+        format: "JSON",
+        wget: "wget https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/HIFG2P",
+        doi: "10.7910/DVN/HIFG2P",
+        citation: 'El-Taher, Ahmed, 2025, "Egyptian Hieroglyphic Signs Segmentation with Orientation", https://doi.org/10.7910/DVN/HIFG2P, Harvard Dataverse, V1',
         preview: "https://images.unsplash.com/photo-1561481538-059fc89c1ce1?q=80&w=800&auto=format&fit=crop"
     }
 ];
