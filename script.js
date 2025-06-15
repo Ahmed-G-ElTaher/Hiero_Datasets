@@ -35,14 +35,14 @@ const paper = [
         id: 1,
         title: "Egyptian Hieroglyphic Layout Analysis",
         doi: "10.7910/DVN/C308X3",
-        citation: 'El-Taher, Ahmed, 2025, "Egyptian Hieroglyphic Layout Analysis", https://doi.org/10.7910/DVN/C308X3, Harvard Dataverse, V2',
+        citation: 'El-Taher, Ahmed; Azab, Shahira; Mohamed, Ammar, 2025, "Egyptian Hieroglyphic Layout Analysis", https://doi.org/10.7910/DVN/C308X3, Harvard Dataverse, V2',
         
     },
     {
         id: 2,
         title: "Egyptian Hieroglyphic Signs Segmentation with Orientation",
         doi: "10.7910/DVN/HIFG2P",
-        citation: 'El-Taher, Ahmed, 2025, "Egyptian Hieroglyphic Signs Segmentation with Orientation", https://doi.org/10.7910/DVN/HIFG2P, Harvard Dataverse, V1',
+        citation: 'El-Taher, Ahmed; Azab, Shahira; Mohamed, Ammar, 2025, "Egyptian Hieroglyphic Signs Segmentation with Orientation", https://doi.org/10.7910/DVN/HIFG2P, Harvard Dataverse, V1',
         
     }
 ];
